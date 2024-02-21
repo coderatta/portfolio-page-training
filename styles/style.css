@@ -1,0 +1,172 @@
+:root {
+    --cyan: #22D4FD;
+    --black: #000000;
+    --white: #F6F6F6;
+    --hover-color: #272727;
+
+    --font-title: 1.5rem;
+    --font-primary: 1.25rem;
+    --font-paragraph: 1.25rem;
+
+    --mobile-width-up: 90%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: var(--black);
+    color: var(--white);
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+/* header */
+
+.navbar {
+    margin: 0 25%;
+    padding: 0;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 60px;
+}
+
+.navbar-link {
+    color: var(--cyan);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}
+
+/* main */
+
+.conteudo {
+    margin: 100px 25%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.div-sobre-mim {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.titulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: var(--font-title);
+    line-height: 1.5em;
+}
+
+.titulo span {
+    color: var(--cyan);
+}
+
+.sobre-mim {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: var(--font-paragraph);
+    line-height: 1.5em;
+}
+
+.links-contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.titulo-secundario {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: var(--font-primary);
+    margin: 0px;
+}
+
+.link-redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    color: var(--white);
+    border: 2px solid var(--cyan);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 15px;
+    width: 280px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: var(--font-primary);
+}
+
+.link-redes-sociais:hover {
+    background-color: var(--hover-color);
+    width: 300px;
+}
+
+.my-photo {
+    width: 360px;
+}
+
+/* footer */
+
+footer {
+    height: 50px;
+    background-color: var(--cyan);
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: var(--font-primary);
+
+    color: var(--black);
+    margin: auto;
+}
+
+@media (max-width:480px) {
+    .navbar {
+        justify-content: center;
+        gap: 15%;
+        margin: 0;
+        background-color: #272727;
+    }
+
+    .conteudo {
+        margin: 50px 5%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .div-sobre-mim {
+        width: var(--mobile-width-up);
+    }
+
+    .my-photo {
+        width: var(--mobile-width-up);
+
+    }
+
+    .link-redes-sociais {
+        width: var(--mobile-width-up);
+    }
+}
