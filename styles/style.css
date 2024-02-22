@@ -169,3 +169,21 @@ footer p {
         width: var(--mobile-width-up);
     }
 }
+
+@media (min-width:481px) and (max-width:900px) {
+    .navbar {
+        justify-content: start;
+        gap: 5%;
+        margin: 0 10%;
+    }
+
+    .conteudo {
+        margin: 50px 5%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .div-sobre-mim {
+        width: var(--mobile-width-up);
+    }
+}
